@@ -2,7 +2,7 @@
 
 The MongoDB connector allows you to connect, create and insert documents in MongoDB database.
 
-##Supported versions
+## Supported versions
 
 MongoDB was developed in EI 6.1.1 tested in MongoDB version 3.4.15.
 
@@ -13,12 +13,12 @@ MongoDB was developed in EI 6.1.1 tested in MongoDB version 3.4.15.
 | Java Mongo Driver | 3.8.0
 | WSO2 EI | 6.1.1
 
-##Java MongoDB Driver
+## Java MongoDB Driver
 
 Copy [Java MongoDB Driver](https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongodb-driver/3.8.0) and paste in <EI_HOME>/lib folder. Restart EI after that.
 
 
-##Build 
+## Build 
 
 mvn clean install
 
