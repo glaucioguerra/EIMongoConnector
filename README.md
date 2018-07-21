@@ -24,8 +24,8 @@ mvn clean install
 
 ## Use MongoDB Connector
 
-* After build this connector, add it to [EI instance] (https://docs.wso2.com/display/EI611/Working+with+Connectors+via+the+Management+Console#WorkingwithConnectorsviatheManagementConsole-addAddingaconnector)
-* Enable the [connector] (https://docs.wso2.com/display/EI611/Working+with+Connectors+via+the+Management+Console#WorkingwithConnectorsviatheManagementConsole-enableEnablingaconnector)
-* Importing the connector into EI-Tooling [described here] (https://docs.wso2.com/display/EI600/Using+the+Gmail+Connector). This connector is not official, it's necessary to build and import the zip file, not choose from wso2 Connector store options.
+* After build this connector, add it to [EI instance](https://docs.wso2.com/display/EI611/Working+with+Connectors+via+the+Management+Console#WorkingwithConnectorsviatheManagementConsole-addAddingaconnector)
+* Enable the [connector](https://docs.wso2.com/display/EI611/Working+with+Connectors+via+the+Management+Console#WorkingwithConnectorsviatheManagementConsole-enableEnablingaconnector)
+* Importing the connector into EI-Tooling [described here](https://docs.wso2.com/display/EI600/Using+the+Gmail+Connector). This connector is not official, it's necessary to build and import the zip file, not choose from wso2 Connector store options.
 
 
