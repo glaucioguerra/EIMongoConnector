@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="insert" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="collection"/>
+    <parameter name="document"/>
+    <sequence>
+        <property expression="$func:collection" name="uri.var.collection" scope="default" type="STRING"/>
+        <property expression="$func:document" name="uri.var.document" scope="default" type="STRING"/>
+        <class name="org.wso2.carbon.connector.MongoDBInsert"/>
+        <property expression="$func:document" name="document" scope="default" type="STRING"/>
+        <payloadFactory media-type="json">
+            <format>
+                {
+                "body":"$1"
+                }
+            </format>
+            <args>
+                <arg evaluator="json" expression="$ctx:uri.var.document"/>
+            </args>
+        </payloadFactory>
+        <property expression="$ctx:result" name="mongoResponse" scope="default" type="STRING"/>
+        <payloadFactory media-type="json">
+            <format>
+                {
+                    "output":$1
+                }
+            </format>
+            <args>
+                <arg evaluator="json" expression="$ctx:mongoResponse"/>
+            </args>
+        </payloadFactory>
+    </sequence>
+</template>

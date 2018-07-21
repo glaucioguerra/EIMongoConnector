@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="init" xmlns="http://ws.apache.org/ns/synapse">
+    <parameter name="username"/>
+    <parameter name="password"/>
+    <parameter name="hostname"/>
+    <parameter name="port"/>
+    <parameter name="database"/>
+    <sequence>
+        <property expression="$func:username" name="uri.var.username" scope="default" type="STRING"/>
+        <property expression="$func:password" name="uri.var.password" scope="default" type="STRING"/>
+        <property expression="$func:hostname" name="uri.var.hostname" scope="default" type="STRING"/>
+        <property expression="$func:port" name="uri.var.port" scope="default" type="STRING"/>
+        <property expression="$func:database" name="uri.var.database" scope="default" type="STRING"/>
+    </sequence>
+</template>
