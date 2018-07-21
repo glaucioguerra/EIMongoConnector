@@ -15,7 +15,7 @@ MongoDB was developed in EI 6.1.1 tested in MongoDB version 3.4.15.
 
 ##Java MongoDB Driver
 
-Copy [Java MongoDB Driver] (https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongodb-driver/3.8.0) and paste in <EI_HOME>/lib folder. Restart EI after that.
+Copy [Java MongoDB Driver](https://oss.sonatype.org/content/repositories/releases/org/mongodb/mongodb-driver/3.8.0) and paste in <EI_HOME>/lib folder. Restart EI after that.
 
 
 ##Build 
